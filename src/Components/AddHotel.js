@@ -7,6 +7,7 @@ class Item extends Component {
     state = {
         name: '',
         price: '',
+        description: '',
         location: '',
         rooms: '',
         image: '',
@@ -36,6 +37,7 @@ class Item extends Component {
         e.preventDefault()
         const data = new FormData()
         data.append('name', this.state.name)
+        data.append('description', this.state.description)
         data.append('price', this.state.price)
         data.append('rooms', this.state.rooms)
         data.append('location', this.state.location)
@@ -75,6 +77,11 @@ class Item extends Component {
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group"> <label for="form_name"> Name *</label> <input onChange={this.changeHandler} name="name" class="form-control" placeholder="Enter hotel name" required="required" data-error="Firstname is required." /> </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group"> <label for="form_name"> Description *</label> <input onChange={this.changeHandler} name="description" class="form-control" placeholder="Enter hotel description" required="required" data-error="Description is required." /> </div>
                                             </div>
                                         </div>
                                         <div class="row">

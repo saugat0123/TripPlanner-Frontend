@@ -6,6 +6,7 @@ import AddHotel from './AddHotel';
 import Home from './Home';
 import Items from './Items';
 import AddItem  from './AddItem';
+import HotelDetails  from './HotelDetails';
 import { Route } from 'react-router-dom'
 
 class Container extends Component {
@@ -18,6 +19,7 @@ class Container extends Component {
                 <Route path='/hotels' component={Hotels} />
                 <Route path='/add/hotel' component={AddHotel} />
                 <Route path='/add/item' component={AddItem} />
+                <Route path='/hotel/detail/:id' component={HotelDetails} />
                 <Route path='/item/all' component={Items} />
             </div>
         )

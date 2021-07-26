@@ -141,7 +141,7 @@ img.avatar {
 
 /* Add padding to containers */
 .container {
-  padding: 16px;
+  padding: 0px 0px 0px 0px;
 }
 
 /* The "Forgot password" text */
@@ -352,9 +352,7 @@ footer{
 }
 
 .jumbotron{
-	background: radial-gradient(circle, rgba(1,2,3,1) 0%, rgba(100,71,100,100) 100%);
-	object-fit: cover;
-	
+	background: radial-gradient(circle, rgba(1,2,3,1) 0%, rgba(100,71,100,100) 100%);					
 }
 
 .jumbotron h1, p{
@@ -404,3 +402,7 @@ label {
 	justify-content: center;
 }
 
+#card-item{
+	margin-left: 50px;
+	margin-top: 20px;
+}

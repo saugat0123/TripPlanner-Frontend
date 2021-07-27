@@ -7,6 +7,7 @@ import Home from './Home';
 import Items from './Items';
 import AddItem  from './AddItem';
 import HotelDetails  from './HotelDetails';
+import Book  from './Book';
 import { Route } from 'react-router-dom'
 
 class Container extends Component {
@@ -20,6 +21,7 @@ class Container extends Component {
                 <Route path='/add/hotel' component={AddHotel} />
                 <Route path='/add/item' component={AddItem} />
                 <Route path='/hotel/detail/:id' component={HotelDetails} />
+                <Route path='/hotel/book/:id' component={Book} />
                 <Route path='/item/all' component={Items} />
             </div>
         )

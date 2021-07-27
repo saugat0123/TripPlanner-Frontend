@@ -53,7 +53,7 @@ class Hotels extends Component {
                                     <Card.Title>Rs. {item.price}/ night</Card.Title>
                                     <Card.Title>{item.location}</Card.Title>
                                     <Button variant="outline-primary" href={'/hotel/detail/' + item._id}>See Details</Button>
-                                    <Button variant="outline-success" >Book Hotel</Button>
+                                    <Button variant="outline-success" href={'/hotel/book/' + item._id}>Book Hotel</Button>
                                     <Button variant="outline-info" >Bookmark</Button>
                                 </Card.Body>
                             </Card>
